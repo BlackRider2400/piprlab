@@ -1,2 +1,4 @@
-def getWord(x):
-    return "Mam " + x + " lat"
+from gpiozero import CPUTemperature
+
+cpu = CPUTemperature()
+print(cpu.temperature)

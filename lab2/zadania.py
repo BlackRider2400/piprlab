@@ -16,7 +16,7 @@ def getTimeForTask(name, number, time):
 
 
 # zadanie 4
-def getSymetric(a, b):
+def getSymmetric(a, b):
     c = (a[0] + b[0]) / 2
     d = (a[1] + b[1]) / 2
     return c, d
@@ -94,7 +94,7 @@ print(getTimeForTask("Adam", 1, 553467))
 print("---------------------------------")
 
 print("Zadanie 4:\n")
-print(getSymetric((5, 6), (8, 7)))
+print(getSymmetric((5, 6), (8, 7)))
 print("---------------------------------")
 
 print("Zadanie 5:\n")

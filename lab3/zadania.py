@@ -22,11 +22,21 @@ def remove_special_words(sentence, letter):
 
 
 # exercise 3
-
-
-
+def remove_special_words_with_special_letters(sentence, letters):
+    array = sentence.split(" ")
+    result = ""
+    for i in array:
+        found = False
+        for j in letters:
+            if i.count(j[0]) >= j[1]:
+                found = True
+        if not found:
+            result = result + i + " "
+    return result
 
 
 print(create_dictionary("kukułka"))
+
 print(remove_special_words("Alice in wonderland went into a deep coma.", ("e", 2)))
 
+print(remove_special_words_with_special_letters("I literally can't deal with this drama right now.", [("a", 2), ("l", 3)]))

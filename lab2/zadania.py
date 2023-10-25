@@ -1,33 +1,33 @@
-# zadanie 1
+# zadanie.txt 1
 def getPowerTo3(x):
     return x ** 3
 
 
-# zadanie 2
+# zadanie.txt 2
 def getPolynomial(x, a, b, c):
     return a * x * x + b * x + c
 
 
-# zadanie 3
+# zadanie.txt 3
 def getTimeForTask(name, number, time):
     time = time / 1000
     time = round(time, 3)
-    return f"{name} wykonał(a) zadanie nr {number} w {time}s."
+    return f"{name} wykonał(a) zadanie.txt nr {number} w {time}s."
 
 
-# zadanie 4
+# zadanie.txt 4
 def getSymmetric(a, b):
     c = (a[0] + b[0]) / 2
     d = (a[1] + b[1]) / 2
     return c, d
 
 
-# zadanie 5
+# zadanie.txt 5
 def getBinary(x):
     return len(str(bin(x))) - 2
 
 
-# zadanie 6
+# zadanie.txt 6
 def getAverageFromTuples(x):
     count = 0
     sumation = 0
@@ -43,7 +43,7 @@ def getAverageFromTuples(x):
     return f"Range: < {minimal}; {maximal}> Average: {average}"
 
 
-# zadanie 7
+# zadanie.txt 7
 def showDimensions(width, height, lenght):
     width = round(width, 3)
     height = round(height, 3)
@@ -66,7 +66,7 @@ def formatRow(a, size):
     return (size - len(a)) * " " + str(a)
 
 
-# zadanie 8
+# zadanie.txt 8
 def getSquareEquation(a, b, c):
     delta = b*b - 4 * a * c
     if delta > 0:

@@ -16,8 +16,11 @@ def check_one_exist_and_one_not(data, name1, name2):
 # 3.Napisz funkcję, która zwróci listę długości geograficznych
 # każdego z adminów
 def get_admins_geo_length(data):
+    lengths = []
     for item in data:
-        print(item.get("address").get("geo").get("lng"))
+        lengths.append(item.get("address").get("geo").get("lng"))
+    return lengths
+
 
 admin_names = [
     "Leanne Graham",
@@ -177,4 +180,4 @@ print_admins_names(admin_names)
 
 print(check_one_exist_and_one_not(admin_sites, "Ervin Howell", "John Smith"))
 
-get_admins_geo_length(admins_full)
+print(get_admins_geo_length(admins_full))

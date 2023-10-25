@@ -35,8 +35,27 @@ def remove_special_words_with_special_letters(sentence, letters):
     return result
 
 
+# exercise 4
+def delete_special_elements(array, name):
+    result = array.copy()
+    for i in array:
+        if name in i:
+            result.remove(i)
+    return result
+
+
 print(create_dictionary("kukułka"))
 
 print(remove_special_words("Alice in wonderland went into a deep coma.", ("e", 2)))
 
-print(remove_special_words_with_special_letters("I literally can't deal with this drama right now.", [("a", 2), ("l", 3)]))
+print(remove_special_words_with_special_letters("I literally can't deal with this drama right now.",
+                                                [("a", 2), ("l", 3)]))
+my_characters = [
+('księżniczka', 'Anna'),
+('wiedźmin', 'Geralt'),
+('osioł', 'Kłapouchy'),
+('księżniczka', 'na ziarnku grochu'),
+('księżniczka', 'Genowefa'),
+('hobbit', 'Bilbo')
+]
+print(delete_special_elements(my_characters, "księżniczka"))
